@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFDFDF"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#18044E"
+        android:text="back"
+        android:textColor="@android:color/white"
+        app:icon="@drawable/ic_arrow_back" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="351dp"
+        android:layout_height="236dp"
+        android:layout_margin="12dp"
+        app:srcCompat="@drawable/img_2" />
+
+    <Button
+        android:id="@+id/btnViewStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#031F50"
+        android:padding="12dp"
+        android:paddingStart="12dp"
+        android:text="Voir Stock"
+        app:icon="@android:drawable/ic_search_category_default" />
+
+    <Button
+        android:id="@+id/btnEditStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#031F50"
+        android:text="Changer Stock"
+        app:icon="@android:drawable/ic_popup_sync" />
+
+</LinearLayout>

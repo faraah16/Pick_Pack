@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F8">
+
+    <!-- ================= BACKGROUND IMAGE ================= -->
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/imagebackground"
+        android:scaleType="centerCrop"
+        android:alpha="0.08"
+        android:importantForAccessibility="no"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <!-- ================= CONTENT ================= -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DEDEDE"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp">
+
+            <!-- ================= INPUT ================= -->
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/img_1" />
+
+            <EditText
+                android:id="@+id/etOrderId"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="#031F50"
+                android:hint="ORD-XXXXXXXX"
+                android:textColorHint="#6B7280"
+                android:paddingHorizontal="16dp"
+                android:textColor="#111827"
+                android:textSize="16sp" />
+
+            <!-- ================= SEARCH BUTTON ================= -->
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="191dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#031F50"
+                android:elevation="6dp"
+                android:letterSpacing="0.04"
+                android:text="Search order"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:icon="@android:drawable/ic_search_category_default"
+                app:iconGravity="textStart" />
+
+            <!-- ================= STATUS BADGE ================= -->
+            <TextView
+                android:id="@+id/tvStatusBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:elevation="4dp"
+                android:letterSpacing="0.06"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="8dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- ================= RESULT TEXT ================= -->
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="#1F2937"
+                android:textSize="16sp" />
+
+            <!-- ================= MAIN ACTION ================= -->
+            <Button
+                android:id="@+id/btnCommanderRobot"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="36dp"
+                android:backgroundTint="#031F50"
+                android:elevation="6dp"
+                android:letterSpacing="0.05"
+                android:text="Order robot"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- ================= SECONDARY ACTION ================= -->
+            <Button
+                android:id="@+id/btnChangeStatus"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="14dp"
+                android:backgroundTint="#475569"
+                android:elevation="3dp"
+                android:text="Change status"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <!-- ================= STATUS OPTIONS ================= -->
+            <LinearLayout
+                android:id="@+id/statusButtonsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnPending"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#64748B"
+                    android:text="Pending"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnPreparing"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#0284C7"
+                    android:text="Preparing"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnShipped"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:backgroundTint="#16A34A"
+                    android:text="Shipped"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- ================= CLOSE ================= -->
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#1F2937"
+                android:elevation="2dp"
+                android:text="Close"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#Dfdfdf"
+    android:padding="24dp">
+
+    <!-- Bouton BACK (icône, discret) -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="#18044E"
+        android:text="Back"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:icon="@drawable/ic_arrow_back" />
+
+    <!-- Contenu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <!-- TITRE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Sign Up"
+            android:textColor="#b2382c"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="Create your account to get started."
+            android:textColor="#2e4179" />
+
+        <!-- LOGO -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            app:srcCompat="@drawable/img_2" />
+
+        <!-- FIRST NAME -->
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input"
+            android:fontFamily="sans-serif-black"
+            android:hint="First Name"
+            android:padding="16dp" />
+
+        <!-- LAST NAME -->
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input"
+            android:fontFamily="sans-serif-black"
+            android:hint="Last Name"
+            android:padding="16dp" />
+
+        <!-- EMAIL -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input"
+            android:fontFamily="sans-serif-black"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp" />
+
+        <!-- PASSWORD -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/bg_input"
+            android:fontFamily="sans-serif-black"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="16dp" />
+
+        <!-- REGISTER BUTTON -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="168dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#18044E"
+            android:gravity="center"
+            android:text=" 📝  REGISTER"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

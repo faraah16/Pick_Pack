@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- SIZE -->
+    <TextView
+        android:text="Size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- MATERIAL -->
+    <TextView
+        android:text="Material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spMaterial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- QUANTITY -->
+    <TextView
+        android:text="Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etQuantity"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="materials">
+        <item>Carton</item>
+        <item>Bois</item>
+        <item>Plastique</item>
+        <item>Métal</item>
+    </string-array>
+
+</resources>

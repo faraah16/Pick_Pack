@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "190711763672",
+    "project_id": "pick-pack-b857c",
+    "storage_bucket": "pick-pack-b857c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190711763672:android:30ee3e1cad73073257bdad",
+        "android_client_info": {
+          "package_name": "com.example.pick_pack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfunPEwQ-L5q8usBONIKLtKkpBmxUkV5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

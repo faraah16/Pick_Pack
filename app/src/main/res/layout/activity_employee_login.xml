@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC"
+    android:padding="24dp">
+
+    <!-- IMAGE BACKGROUND DÉCORATIVE (TOP-LEFT) -->
+
+    <!-- Bouton BACK -->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="280dp"
+        android:layout_height="220dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="544dp"
+        android:contentDescription="@null"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/imagebackground" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#18044E"
+        android:text="Back"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <!-- Contenu centré -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <!-- TITRE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#b2382c"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Welcome back, please login."
+            android:textColor="#2e4179" />
+
+        <!-- EMAIL -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input"
+            android:fontFamily="sans-serif-black"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp" />
+
+        <!-- PASSWORD -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/bg_input"
+            android:fontFamily="sans-serif-black"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="16dp" />
+
+        <!-- LOGIN BUTTON -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="168dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#DBDBDB"
+            android:fontFamily="sans-serif-medium"
+            android:text="LOGIN"
+            android:textAllCaps="true"
+            android:textColor="#18044E"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

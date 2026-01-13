@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdfdf">
+
+    <!-- ================= IMAGE BACKGROUND (VISIBLE) ================= -->
+
+    <!-- ================= CONTENU PAR-DESSUS ================= -->
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="682dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+
+        <Button
+            android:id="@+id/btnEmployee"
+            android:layout_width="276dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#031F50"
+            android:text="‍💼     Employee "
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnClient"
+            android:layout_width="276dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#031F50"
+            android:text="👤      Client"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnTrackOrder"
+            android:layout_width="276dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#031F50"
+            android:text=" 📦  Track my order"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="191dp"
+            android:layout_height="148dp"
+            android:src="@drawable/img_2"
+            android:scaleType="fitCenter" />
+
+
+        <FrameLayout
+            android:id="@+id/main_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</FrameLayout>

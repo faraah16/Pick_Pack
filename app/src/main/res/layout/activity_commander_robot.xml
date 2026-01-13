@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#BCA6A6">
+
+    <!-- ================= HEADER BLUETOOTH (FIXE) ================= -->
+    <LinearLayout
+        android:id="@+id/layoutBluetooth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#DCDCDC"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#031F50"
+            android:text="Back"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Déconnecté"
+            android:textColor="@color/Red"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bluetooth"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#031F50"
+            app:icon="@android:drawable/stat_sys_data_bluetooth" />
+
+        <TextView
+            android:id="@+id/tvOrderMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Mode test"
+            android:textColor="@color/Red"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- ================= ZONE SCROLLABLE ================= -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutBluetooth">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DCDCDC"
+            android:backgroundTint="#DCDCDC"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- ================= ZONE BRAS ROBOT (INCHANGÉE) ================= -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutArm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imgRobotArm"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/robot_arm"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <SeekBar
+                    android:id="@+id/servo5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="36dp"
+                    android:max="180"
+                    android:progressTint="@color/Red"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@id/imgRobotArm"
+                    app:layout_constraintTop_toTopOf="@id/imgRobotArm" />
+
+                <SeekBar
+                    android:id="@+id/servo4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="32dp"
+                    android:max="180"
+                    android:progressTint="@color/Red"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/imgRobotArm"
+                    app:layout_constraintTop_toTopOf="@id/servo5" />
+
+                <SeekBar
+                    android:id="@+id/servo3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="68dp"
+                    android:max="180"
+                    android:progressTint="@color/Red"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/imgRobotArm"
+                    app:layout_constraintTop_toTopOf="@id/servo5" />
+
+                <SeekBar
+                    android:id="@+id/servo2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="100dp"
+                    android:max="180"
+                    android:progressTint="@color/Red"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@id/imgRobotArm"
+                    app:layout_constraintTop_toTopOf="@id/servo5" />
+
+                <SeekBar
+                    android:id="@+id/servo1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="144dp"
+                    android:max="180"
+                    android:progressTint="@color/Red"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@id/imgRobotArm"
+                    app:layout_constraintTop_toTopOf="@id/servo5" />
+
+                <SeekBar
+                    android:id="@+id/servo0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="36dp"
+                    android:max="180"
+                    android:progressTint="@color/Red"
+                    app:layout_constraintBottom_toBottomOf="@id/imgRobotArm"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@id/imgRobotArm" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <!-- ================= SEQUENCE ================= -->
+                <LinearLayout
+                    android:id="@+id/layoutSequence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnPlay"
+                        android:layout_width="76dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="#08920E"
+                        android:text="Play"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/btnStart"
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="#022038"
+                        android:text="Start"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/btnFinish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="#D50E39"
+                        android:text="Finish"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/btnStop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="#DE1203"
+                        android:text="Stop"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/btnGopen"
+                        android:layout_width="99dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="#8443F4"
+                        android:text="OPEN"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/btnGclose"
+                        android:layout_width="108dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="#C18ADE"
+                        android:text="CLOSE"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <!-- ================= MOVE ================= -->
+            <LinearLayout
+                android:id="@+id/layoutMove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnUp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="@color/Blue"
+                    android:text="↑"
+                    android:textColor="@android:color/white"
+                    app:icon="@android:drawable/arrow_up_float" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnLeft"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:backgroundTint="@color/Blue"
+                        android:text="←"
+                        android:textColor="@android:color/white"
+                        app:icon="@android:drawable/ic_media_rew" />
+
+                    <Button
+                        android:id="@+id/btnRight"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="8dp"
+                        android:backgroundTint="@color/Blue"
+                        android:text="→"
+                        android:textColor="@android:color/white"
+                        app:icon="@android:drawable/ic_media_ff" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnDown"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/Blue"
+                    android:text="↓"
+                    android:textColor="@android:color/white"
+                    app:icon="@android:drawable/arrow_down_float" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
